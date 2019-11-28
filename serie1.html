@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dejavu</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="headerNav flex-vertical-center">
+            <div class="headerNav__primary flex-vertical-center">
+                <button class="btn button__menu"><i class="searchForm_icon icon-menu"></i></button>
+                <a class="headerNav__linkLogo" href="#">
+                    <img class="header__logo" src="./assets/img/logo.png" alt="logo DejaVú">
+                </a>
+                <ul class="headerNav__list flex">
+                    <li class="headerNav__item"><a class="headerNav__link" href="#novedades">News</a></li>
+                    <li class="headerNav__item"><a class="headerNav__link" href="#series">Series</a></li>
+                    <li class="headerNav__item"><a class="headerNav__link" href="#films">Films</a></li>
+                    <li class="headerNav__item"><a class="headerNav__link" href="#favorites">Favorites</a></li>
+                </ul>
+            </div>
+            <div class="headerNav__secondary flex-vertical-center">
+                <div class="headerNav__search">
+                    <form class="formSearch flex-vertical-center" autocomplete="off">
+                        <input class="formSearch__control" type="text" id="Search" placeholder="Search...">
+                        <button class="btn formSearch__button--submit" type="submit">
+                            <i class="searchForm_icon icon-search"></i></button>
+                    </form>
+                </div>
+                <button class="btn button__closed"><i class="searchForm_icon icon-cross"></i></button>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero__container">
+                <video class="hero__video" autoplay controls>
+                    <source src="./assets/videos/simpson.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero__content-detail">
+                    <div class="hero__details flex-columns">
+                        <h1 class="hero__title">The Simpson <br> season 28</h1>
+                        <div class="flex-vertical-center">
+                            <i class="film-info__icon icon-play2"></i>
+                            <span class="film-info__year">1988</span>
+                            <span class="film-info__origin">EEUU</span>
+                        </div>
+                        <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                            faucibus, turpis nec placerat fringilla, purus metus sollicitudin risus, sed facilisis ante
+                            mauris lacinia nisl. Nunc nec eleifend nulla, at laoreet eros.</p>
+                        <ul class="film__score flex">
+                            <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                            <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                            <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                            <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                            <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container-films">
+            <section class="section-films" id="characters">
+                <h2 class="section-films__title">Characters</h2>
+                <ul class="section-characters__list flex">
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/homer.jpg"
+                            alt="Homer Simpson">
+                        <span class="character__name">Homer Simpson</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/lisa.jpg"
+                            alt="Lisa Simpson">
+                        <span class="character__name">Lisa Simpson</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/bart.jpg"
+                            alt="Bart Simpson">
+                        <span class="character__name">Bart Simpson</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/apu.jpg" alt="Apu">
+                        <span class="character__name">Apu</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/flanders.jpg"
+                            alt="Flanders">
+                        <span class="character__name">Flanders</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/homer.jpg"
+                            alt="Homer Simpson">
+                        <span class="character__name">Homer Simpson</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/lisa.jpg"
+                            alt="Lisa Simpson">
+                        <span class="character__name">Lisa Simpson</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/bart.jpg"
+                            alt="Bart Simpson">
+                        <span class="character__name">Bart Simpson</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/apu.jpg" alt="Apu">
+                        <span class="character__name">Apu</span>
+                    </li>
+                    <li class="section-character__item">
+                        <img class="character__image" src="./assets/img/thumbails/characters/flanders.jpg"
+                            alt="Flanders">
+                        <span class="character__name">Flanders</span>
+                    </li>
+
+
+                </ul>
+            </section>
+            <section class="section-films" id="series">
+                <h2 class="section-films__title">Season 29</h2>
+                <ul class="section_films__list flex">
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Serfsons</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">1</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer has to undertake a dangerous mission to save
+                                        the life of Marge's mother. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Springfield Splendor</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">2</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Marge and Lisa have creative differences after
+                                        creating a graphic novel together. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Whistler's Father</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">3</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer discovers Maggie can whistle. Meanwhile, Marge
+                                        designs Fat Tony's brothel.
+
+                                        Guest stars: Nick Fascitelli as Professor Whistler, Valerie Harper as Backstage
+                                        Mom and Joe Mantegna as Fat Tony </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Treehouse of Horror XXVIII</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">5</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">In the segment "The Exor-Sis", Maggie is possessed by
+                                        Pazuzu, a vengeful demon. In "Coralisa", Lisa discovers an alternate reality
+                                        where the Simpsons are a disturbing (yet perfect) family. In "MMM... Homer",
+                                        Homer cannibalizes himself after he runs out of food while Marge and the kids
+                                        are away from home.
+                                        Guest stars: Mario Batali as himself, Ben Daniels as a priest, Neil Gaiman as
+                                        Snowball and William Friedkin as Dr. Kenneth Humphries </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Serfsons</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">1</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer has to undertake a dangerous mission to save
+                                        the life of Marge's mother. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Springfield Splendor</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">2</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Marge and Lisa have creative differences after
+                                        creating a graphic novel together. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Whistler's Father</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">3</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer discovers Maggie can whistle. Meanwhile, Marge
+                                        designs Fat Tony's brothel.
+
+                                        Guest stars: Nick Fascitelli as Professor Whistler, Valerie Harper as Backstage
+                                        Mom and Joe Mantegna as Fat Tony </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Treehouse of Horror XXVIII</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">5</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">In the segment "The Exor-Sis", Maggie is possessed by
+                                        Pazuzu, a vengeful demon. In "Coralisa", Lisa discovers an alternate reality
+                                        where the Simpsons are a disturbing (yet perfect) family. In "MMM... Homer",
+                                        Homer cannibalizes himself after he runs out of food while Marge and the kids
+                                        are away from home.
+                                        Guest stars: Mario Batali as himself, Ben Daniels as a priest, Neil Gaiman as
+                                        Snowball and William Friedkin as Dr. Kenneth Humphries </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </section>
+            <section class="section-films" id="series">
+                <h2 class="section-films__title">Season 28</h2>
+                <ul class="section_films__list flex">
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Serfsons</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">1</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer has to undertake a dangerous mission to save
+                                        the life of Marge's mother. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Springfield Splendor</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">2</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Marge and Lisa have creative differences after
+                                        creating a graphic novel together. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Whistler's Father</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">3</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer discovers Maggie can whistle. Meanwhile, Marge
+                                        designs Fat Tony's brothel.
+
+                                        Guest stars: Nick Fascitelli as Professor Whistler, Valerie Harper as Backstage
+                                        Mom and Joe Mantegna as Fat Tony </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Treehouse of Horror XXVIII</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">5</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">In the segment "The Exor-Sis", Maggie is possessed by
+                                        Pazuzu, a vengeful demon. In "Coralisa", Lisa discovers an alternate reality
+                                        where the Simpsons are a disturbing (yet perfect) family. In "MMM... Homer",
+                                        Homer cannibalizes himself after he runs out of food while Marge and the kids
+                                        are away from home.
+                                        Guest stars: Mario Batali as himself, Ben Daniels as a priest, Neil Gaiman as
+                                        Snowball and William Friedkin as Dr. Kenneth Humphries </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Serfsons</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">1</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer has to undertake a dangerous mission to save
+                                        the life of Marge's mother. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Springfield Splendor</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">2</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Marge and Lisa have creative differences after
+                                        creating a graphic novel together. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Whistler's Father</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">3</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer discovers Maggie can whistle. Meanwhile, Marge
+                                        designs Fat Tony's brothel.
+
+                                        Guest stars: Nick Fascitelli as Professor Whistler, Valerie Harper as Backstage
+                                        Mom and Joe Mantegna as Fat Tony </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Treehouse of Horror XXVIII</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">5</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">In the segment "The Exor-Sis", Maggie is possessed by
+                                        Pazuzu, a vengeful demon. In "Coralisa", Lisa discovers an alternate reality
+                                        where the Simpsons are a disturbing (yet perfect) family. In "MMM... Homer",
+                                        Homer cannibalizes himself after he runs out of food while Marge and the kids
+                                        are away from home.
+                                        Guest stars: Mario Batali as himself, Ben Daniels as a priest, Neil Gaiman as
+                                        Snowball and William Friedkin as Dr. Kenneth Humphries </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </section>
+            <section class="section-films" id="series">
+                <h2 class="section-films__title">Season 27</h2>
+                <ul class="section_films__list flex">
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Serfsons</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">1</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer has to undertake a dangerous mission to save
+                                        the life of Marge's mother. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Springfield Splendor</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">2</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Marge and Lisa have creative differences after
+                                        creating a graphic novel together. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Whistler's Father</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">3</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer discovers Maggie can whistle. Meanwhile, Marge
+                                        designs Fat Tony's brothel.
+
+                                        Guest stars: Nick Fascitelli as Professor Whistler, Valerie Harper as Backstage
+                                        Mom and Joe Mantegna as Fat Tony </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Treehouse of Horror XXVIII</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">5</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">In the segment "The Exor-Sis", Maggie is possessed by
+                                        Pazuzu, a vengeful demon. In "Coralisa", Lisa discovers an alternate reality
+                                        where the Simpsons are a disturbing (yet perfect) family. In "MMM... Homer",
+                                        Homer cannibalizes himself after he runs out of food while Marge and the kids
+                                        are away from home.
+                                        Guest stars: Mario Batali as himself, Ben Daniels as a priest, Neil Gaiman as
+                                        Snowball and William Friedkin as Dr. Kenneth Humphries </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Serfsons</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">1</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer has to undertake a dangerous mission to save
+                                        the life of Marge's mother. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Springfield Splendor</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">2</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Marge and Lisa have creative differences after
+                                        creating a graphic novel together. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Whistler's Father</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">3</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer discovers Maggie can whistle. Meanwhile, Marge
+                                        designs Fat Tony's brothel.
+
+                                        Guest stars: Nick Fascitelli as Professor Whistler, Valerie Harper as Backstage
+                                        Mom and Joe Mantegna as Fat Tony </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Treehouse of Horror XXVIII</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">5</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">In the segment "The Exor-Sis", Maggie is possessed by
+                                        Pazuzu, a vengeful demon. In "Coralisa", Lisa discovers an alternate reality
+                                        where the Simpsons are a disturbing (yet perfect) family. In "MMM... Homer",
+                                        Homer cannibalizes himself after he runs out of food while Marge and the kids
+                                        are away from home.
+                                        Guest stars: Mario Batali as himself, Ben Daniels as a priest, Neil Gaiman as
+                                        Snowball and William Friedkin as Dr. Kenneth Humphries </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </section>
+            <section class="section-films" id="series">
+                <h2 class="section-films__title">Season 26</h2>
+                <ul class="section_films__list flex">
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Serfsons</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">1</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer has to undertake a dangerous mission to save
+                                        the life of Marge's mother. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Springfield Splendor</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">2</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Marge and Lisa have creative differences after
+                                        creating a graphic novel together. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Whistler's Father</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">3</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer discovers Maggie can whistle. Meanwhile, Marge
+                                        designs Fat Tony's brothel.
+
+                                        Guest stars: Nick Fascitelli as Professor Whistler, Valerie Harper as Backstage
+                                        Mom and Joe Mantegna as Fat Tony </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Treehouse of Horror XXVIII</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">5</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">In the segment "The Exor-Sis", Maggie is possessed by
+                                        Pazuzu, a vengeful demon. In "Coralisa", Lisa discovers an alternate reality
+                                        where the Simpsons are a disturbing (yet perfect) family. In "MMM... Homer",
+                                        Homer cannibalizes himself after he runs out of food while Marge and the kids
+                                        are away from home.
+                                        Guest stars: Mario Batali as himself, Ben Daniels as a priest, Neil Gaiman as
+                                        Snowball and William Friedkin as Dr. Kenneth Humphries </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Serfsons</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">1</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer has to undertake a dangerous mission to save
+                                        the life of Marge's mother. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Springfield Splendor</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">2</span>
+                                        <span class="film-info__min">24min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Marge and Lisa have creative differences after
+                                        creating a graphic novel together. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Whistler's Father</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">3</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Homer discovers Maggie can whistle. Meanwhile, Marge
+                                        designs Fat Tony's brothel.
+
+                                        Guest stars: Nick Fascitelli as Professor Whistler, Valerie Harper as Backstage
+                                        Mom and Joe Mantegna as Fat Tony </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Treehouse of Horror XXVIII</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__episode">5</span>
+                                        <span class="film-info__min">23min</span>
+                                    </div>
+                                    <p class="film-info__synopsis">In the segment "The Exor-Sis", Maggie is possessed by
+                                        Pazuzu, a vengeful demon. In "Coralisa", Lisa discovers an alternate reality
+                                        where the Simpsons are a disturbing (yet perfect) family. In "MMM... Homer",
+                                        Homer cannibalizes himself after he runs out of food while Marge and the kids
+                                        are away from home.
+                                        Guest stars: Mario Batali as himself, Ben Daniels as a priest, Neil Gaiman as
+                                        Snowball and William Friedkin as Dr. Kenneth Humphries </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer__container">
+            <aside class="footer__information">
+                <ul class="footer__links">
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">About us</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Jobs</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Help</a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="footer__map">
+                <ul class="footer__links">
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Series</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Films</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">News</a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="footer__legal">
+                <ul class="footer__links">
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Term of Use</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="footer__social">
+                <ul class="footer__links">
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#"><i class="searchForm_icon icon-github"></i></a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#"><i class="searchForm_icon icon-twitter"></i></a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#"><i class="searchForm_icon icon-linkedin"></i></a>
+                    </li>
+                </ul>
+            </aside>
+            <p class="footer__copyright">Copyright ©2019. Dejavu All rights reserved.</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
