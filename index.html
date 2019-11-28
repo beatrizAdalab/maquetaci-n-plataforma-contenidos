@@ -12,8 +12,83 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bodylogin">
+    <header class="headerLogin flex">
+        <a class="headerLogin__link" href="/">
+            <img class="header__logo" src="./assets/img/logo.png" alt="logo DejaVú">
+        </a>
+    </header>
+    <main>
+        <section class="login flex">
+            <div class="login__container">
+                <h1>Sign In</h1>
+                <form method="" action="./home.htm" class="formLogin">
+                    <label class="formLogin__label" for="emailUser">Email</label>
+                    <input class="formLogin__control" type="email" id="emailUser" placeholder="Example@example.com">
+                    <label class="formLogin__label" for="passUser">Password</label>
+                    <input class="formLogin__control" type="password" id="passUser" placeholder="Password">
+                    <button class="btn formLogin__button--submit">Sign In</button>
+                    <a class="form-login__linkHelp" href="#">Bad memory? Recover your password</a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <aside class="footer__information">
+                <ul class="footer__links">
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">About us</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Jobs</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Help</a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="footer__map">
+                <ul class="footer__links">
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Series</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Films</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">News</a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="footer__legal">
+                <ul class="footer__links">
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Term of Use</a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="footer__social">
+                <ul class="footer__links">
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#"><i class="searchForm_icon icon-github"></i></a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#"><i class="searchForm_icon icon-twitter"></i></a>
+                    </li>
+                    <li class="footer__linkItem">
+                        <a class="footer__link" href="#"><i class="searchForm_icon icon-linkedin"></i></a>
+                    </li>
+                </ul>
+            </aside>
+            <p class="footer__copyright">Copyright ©2019. Dejavu All rights reserved.</p>
 
+        </div>
+    </footer>
+</body>
 </body>
 
 </html>
