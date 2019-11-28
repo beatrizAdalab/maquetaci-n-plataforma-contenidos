@@ -63,6 +63,8 @@
 }
 
 .formLogin__button--submit {
+    display: inline-block;
+    text-align: center;
     background: var(--color-primary);
     width: 100%;
     margin: 1rem 0;
