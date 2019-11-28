@@ -6,6 +6,7 @@
 
 @import "./footer.css";
 @import "./nav.css";
+@import "./data-films.css";
 /* ---------------------------PAGE LOGIN */
 
 .headerLogin {
@@ -194,5 +195,165 @@
         .hero__description {
             font-size: 1rem;
         }
+    }
+}
+
+/*CARDS*/
+
+.container-films {
+    padding: 0px 20px 40px 20px;
+}
+
+.film-info__title {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.film-info__year {
+    color: var(--color-primary);
+    padding-right: 10px;
+}
+
+.film-info__origin {
+    color: var(--color-white);
+}
+
+.film-info__synopsis {
+    padding-top: 10px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: white;
+}
+
+.film-info__icon {
+    color: var(--color-grey-light);
+    font-size: 1.5rem;
+    padding-right: 10px;
+}
+
+.film-info__icon:hover {
+    color: var(--color-white);
+}
+
+.thumbnail-score {
+    margin: 1rem 0;
+}
+
+.section-films__title {
+    color: var(--color-grey-light);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+}
+
+.section-films {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.section_films__list, .section-characters__list {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.section-film__details {
+    height: 145px;
+    width: 240px;
+    margin-right: 5px;
+    transition: height .6s, width .6s;
+    transition-timing-function: linear;
+    position: relative;
+    cursor: pointer;
+}
+
+.section-film__details:hover {
+    margin-right: 5px;
+    height: 420px;
+    width: calc(100vw - 40px);
+}
+
+.film-info {
+    width: calc(100vw - 40px);
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity .6s;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.section-film__details:hover .film-info {
+    opacity: 1;
+    height: 420px;
+    overflow: scroll;
+}
+
+.more-information {
+    width: 100%;
+    display: inline-block;
+    color: var(--color-grey-light);
+    text-align: center;
+}
+
+.more-information:hover {
+    color: var(--color-primary);
+}
+
+/*cards-character*/
+
+.section-character__item {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+
+.character__image {
+    height: 155px;
+}
+
+.character__name {
+    padding-top: 10px;
+}
+
+.film-info__episode {
+    color: var(--color-primary);
+    padding-right: 10px;
+}
+
+.film-info__episode:before {
+    color: var(--color-primary);
+    content: "episode ";
+}
+
+@media only screen and (min-width: 768px) {
+    .container-films {
+        padding: 1.5rem;
+        padding-bottom: 2.5rem;
+        max-width: 1024px;
+        margin: auto;
+    }
+    .film-info__synopsis {
+        height: 80px;
+        overflow: scroll;
+        white-space: wrap;
+        text-overflow: ellipsis;
+    }
+    .section-film__details:hover {
+        height: 290px;
+        width: 480px;
+    }
+    .film-info {
+        width: 480px;
+        height: 290px;
+    }
+    .section-film__details:hover .film-info {
+        height: 100%;
+    }
+    .character__image {
+        height: 170px;
     }
 }

@@ -1,0 +1,35 @@
+/*Movie data only for layout. Implement in production*/
+
+.section-film__details {
+    background: var(--color-primary-opacity);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-alone {
+    background-image: url(../img/thumbails/home-alone.jpeg);
+}
+
+.et {
+    background-image: url(../img/thumbails/ET.jpg);
+}
+
+.gremlins {
+    background-image: url(../img/thumbails/gremlins.jpeg);
+}
+
+.indiana-jones {
+    background-image: url(../img/thumbails/indiana-jones.jpeg);
+}
+
+.simpson {
+    background-image: url(../img/thumbails/simpson.jpg);
+}
+
+.prince {
+    background-image: url(../img/thumbails/the-fresh-prince.jpg);
+}
+
+.team {
+    background-image: url(../img/thumbails/EquipoA.jpg);
+}
