@@ -13,7 +13,1173 @@
 </head>
 
 <body>
+    <header class="header">
+        <nav class="headerNav flex-vertical-center">
+            <div class="headerNav__primary flex-vertical-center">
+                    <label for="menu-toggle">
+                       <div class="btn button__menu"><i class="searchForm_icon icon-menu"></i></div>
+                    </label>
+                   
+                    <a class="headerNav__linkLogo" href="#">
+                        <img class="header__logo" src="./assets/img/logo.png" alt="logo DejaVú">
+                    </a>
+                    <div class="headerNav__menu-toggle">
+                            <input type="checkbox" id="menu-toggle"/>
+                            <ul class="headerNav__list flex" id="menu">
+                                    <li class="headerNav__item-search flex-center">
+                                            <div class="headerNav__search">
+                                                <form class="formSearch-s flex-vertical-center" autocomplete="off">
+                                                    <label for="search" class="hidden-sr">search</label>
+                                                    <input class="formSearch__control" name="search" type="text" id="search" placeholder="Search...">
+                                                    <button class="btn formSearch__button--submit" name="btn-search" type="submit">
+                                                        <i class="searchForm_icon icon-search"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </li>
+                                <li class="headerNav__item"><a class="headerNav__link" href="#novedades">News</a></li>
+                                <li class="headerNav__item"><a class="headerNav__link" href="#series">Series</a></li>
+                                <li class="headerNav__item"><a class="headerNav__link" href="#films">Films</a></li>
+                                <li class="headerNav__item"><a class="headerNav__link" href="#favorites">Favorites</a></li>
+                            </ul>
+                    </div>
+            </div>
+            
+            <div class="headerNav__secondary flex-vertical-center">
+                <div class="headerNav__search">
+                    <form class="formSearch flex-vertical-center" autocomplete="off">
+                        <label for="search" class="hidden-sr">search</label>
+                        <input class="formSearch__control" name="search" type="text" id="search" placeholder="Search...">
+                        <button class="btn formSearch__button--submit" name="btn-search" type="submit">
+                            <i class="searchForm_icon icon-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <button class="btn button__closed"><i class="searchForm_icon icon-cross"></i></button>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero__container">
+                <picture>
+                    <source media="(min-width: 500px)" srcset="./assets/img/sinfin-m.jpg" alt="The Neverending Story">
+                    <source media="(min-width: 768px)" srcset="./assets/img/sinfin-l.jpg" alt="The Neverending Story">
+                    <img class="hero__image" src="./assets/img/sinfin-s.jpg" alt="The Neverending Story">
+                </picture>
+                <div class="hero__content-detail">
+                    <div class="hero__details flex-columns">
+                        <h1 class="hero__title">The Neverending Story</h1>
+                        <div class="flex-vertical-center">
+                            <i class="film-info__icon icon-play2"></i>
+                            <span class="film-info__year">1988</span>
+                            <span class="film-info__origin">EEUU</span>
+                        </div>
+                        <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                            faucibus, turpis nec placerat fringilla, purus metus sollicitudin risus, sed facilisis ante
+                            mauris lacinia nisl. Nunc nec eleifend nulla, at laoreet eros.</p>
+                        <ul class="film__score flex">
+                            <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                            <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                            <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                            <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                            <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="container-films">
+            <section class="section-films" id="novedades">
+                <h2 class="section-films__title">Novedades</h2>
+                <ul class="section_films__list flex">
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details home-alone">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Home alone</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1988</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">A boy has to fend for himself when he is accidentally
+                                        left behind
+                                        after his
+                                        family jets off to Paris for Christmas. The youngster initially enjoys his
+                                        freedom, but is soon
+                                        forced
+                                        to resort to ingenious booby traps to defend the family home from two dim-witted
+                                        burglars. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details et">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">E.T. the Extra-Terrestrial</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1982</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Steven Spielberg directs this heart-warming family
+                                        tale of friendship
+                                        between a boy and his pet alien. Young Elliott (Henry Thomas) has not had a
+                                        happy home life
+                                        since his parents split up. Living with his mother, Mary (Dee Wallace), he is
+                                        constantly
+                                        fighting with his older brother, Michael (Robert MacNaughton), and little
+                                        sister, Gertie (Drew
+                                        Barrymore). When Elliott finds an alien in his backyard one night, he takes the
+                                        creature in,
+                                        christening him 'ET' and aiding him in his efforts to contact his mother ship.
+                                        ET has various
+                                        amazing powers, including the ability to heal and make objects levitate, but his
+                                        growing bond
+                                        with Elliott is threatened by the fact that government officials are already
+                                        trying to track him
+                                        down. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details gremlins">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Gremlins</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1984</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Young Billy Peltzer's (Zach Galligan) everyday
+                                        smalltown life is
+                                        given a lift when his travelling salesman father Rand (Hoyt Axton) buys him the
+                                        ultimate
+                                        Christmas gift in a far-off Chinatown--the mogwai--an adorable little big-eared,
+                                        furry, brown
+                                        and white creature. But the old man who sold the creature gave three rules that
+                                        must always be
+                                        followed when caring for the mogwai: 1) no water 2) no food after midnight 3) no
+                                        bright light.
+                                        When Billy inadvertently violates these first two rules, the small town of
+                                        Kingston Falls is
+                                        turned upside down by a legion of green, nasty gremlins! </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details indiana-jones">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Indiana Jones</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1981</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">It is 1936. Archaeology professor Indiana Jones is
+                                        recruited by the
+                                        US government to find the Lost Ark of the Covenant, which once contained the
+                                        tablets upon which
+                                        the Ten Commandments were written. The Ark, according to legend, has vast power
+                                        that will make
+                                        any side that possesses it invincible and the American government wants to find
+                                        it before The
+                                        Nazis. Indiana goes to Nepal to meet his old girlfriend Marion Ravenwood who has
+                                        the medallion
+                                        that leads to the location of the Ark. Hotly pursued, they travel to Cairo in a
+                                        race to be the
+                                        ones to find the Ark before the Nazis do.
+                                    </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details home-alone">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Home alone</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1988</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">A boy has to fend for himself when he is accidentally
+                                        left behind
+                                        after his
+                                        family jets off to Paris for Christmas. The youngster initially enjoys his
+                                        freedom, but is soon
+                                        forced
+                                        to resort to ingenious booby traps to defend the family home from two dim-witted
+                                        burglars. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details et">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">E.T. the Extra-Terrestrial</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1982</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Steven Spielberg directs this heart-warming family
+                                        tale of friendship
+                                        between a boy and his pet alien. Young Elliott (Henry Thomas) has not had a
+                                        happy home life
+                                        since his parents split up. Living with his mother, Mary (Dee Wallace), he is
+                                        constantly
+                                        fighting with his older brother, Michael (Robert MacNaughton), and little
+                                        sister, Gertie (Drew
+                                        Barrymore). When Elliott finds an alien in his backyard one night, he takes the
+                                        creature in,
+                                        christening him 'ET' and aiding him in his efforts to contact his mother ship.
+                                        ET has various
+                                        amazing powers, including the ability to heal and make objects levitate, but his
+                                        growing bond
+                                        with Elliott is threatened by the fact that government officials are already
+                                        trying to track him
+                                        down. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details gremlins">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Gremlins</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1984</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Young Billy Peltzer's (Zach Galligan) everyday
+                                        smalltown life is
+                                        given a lift when his travelling salesman father Rand (Hoyt Axton) buys him the
+                                        ultimate
+                                        Christmas gift in a far-off Chinatown--the mogwai--an adorable little big-eared,
+                                        furry, brown
+                                        and white creature. But the old man who sold the creature gave three rules that
+                                        must always be
+                                        followed when caring for the mogwai: 1) no water 2) no food after midnight 3) no
+                                        bright light.
+                                        When Billy inadvertently violates these first two rules, the small town of
+                                        Kingston Falls is
+                                        turned upside down by a legion of green, nasty gremlins! </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details indiana-jones">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Indiana Jones</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1981</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">It is 1936. Archaeology professor Indiana Jones is
+                                        recruited by the
+                                        US government to find the Lost Ark of the Covenant, which once contained the
+                                        tablets upon which
+                                        the Ten Commandments were written. The Ark, according to legend, has vast power
+                                        that will make
+                                        any side that possesses it invincible and the American government wants to find
+                                        it before The
+                                        Nazis. Indiana goes to Nepal to meet his old girlfriend Marion Ravenwood who has
+                                        the medallion
+                                        that leads to the location of the Ark. Hotly pursued, they travel to Cairo in a
+                                        race to be the
+                                        ones to find the Ark before the Nazis do.
+                                    </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-films" id="series">
+                <h2 class="section-films__title">Series</h2>
+                <ul class="section_films__list flex">
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Simpson</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1989</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">The Simpsons is an American animated sitcom created
+                                        by Matt Groening for the Fox Broadcasting Company. The series is
+                                        a satirical depiction of working-class life, epitomized by the Simpson family,
+                                        which consists of Homer, Marge, Bart, Lisa, and Maggie. The show is set in the
+                                        fictional town of Springfield and parodies American culture and society,
+                                        television, and the human condition. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details prince">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Fresh Prince</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1990</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis"> Will Smith stars as a kid from a tough West
+                                        Philadelphia neighborhood sent to live with his wealthy relatives in Bel-Air,
+                                        California, where he must adjust to a different lifestyle and family.</p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details team">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The A-Team </h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1981</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis"> Four Vietnam vets, framed for a crime they didn't
+                                        commit, help the innocent while on the run from the military.
+                                    </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Simpson</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1989</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">The Simpsons is an American animated sitcom created
+                                        by Matt Groening for the Fox Broadcasting Company. The series is
+                                        a satirical depiction of working-class life, epitomized by the Simpson family,
+                                        which consists of Homer, Marge, Bart, Lisa, and Maggie. The show is set in the
+                                        fictional town of Springfield and parodies American culture and society,
+                                        television, and the human condition. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details prince">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Fresh Prince</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1990</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis"> Will Smith stars as a kid from a tough West
+                                        Philadelphia neighborhood sent to live with his wealthy relatives in Bel-Air,
+                                        California, where he must adjust to a different lifestyle and family.</p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details team">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The A-Team </h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1981</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis"> Four Vietnam vets, framed for a crime they didn't
+                                        commit, help the innocent while on the run from the military.
+                                    </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Simpson</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1989</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">The Simpsons is an American animated sitcom created
+                                        by Matt Groening for the Fox Broadcasting Company. The series is
+                                        a satirical depiction of working-class life, epitomized by the Simpson family,
+                                        which consists of Homer, Marge, Bart, Lisa, and Maggie. The show is set in the
+                                        fictional town of Springfield and parodies American culture and society,
+                                        television, and the human condition. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details prince">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Fresh Prince</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1990</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis"> Will Smith stars as a kid from a tough West
+                                        Philadelphia neighborhood sent to live with his wealthy relatives in Bel-Air,
+                                        California, where he must adjust to a different lifestyle and family.</p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
 
+                </ul>
+            </section>
+            <section class="section-films" id="films">
+                <h2 class="section-films__title">Films</h2>
+                <ul class="section_films__list flex">
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details home-alone">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Home alone</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1988</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">A boy has to fend for himself when he is accidentally
+                                        left behind
+                                        after his
+                                        family jets off to Paris for Christmas. The youngster initially enjoys his
+                                        freedom, but is soon
+                                        forced
+                                        to resort to ingenious booby traps to defend the family home from two dim-witted
+                                        burglars. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details et">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">E.T. the Extra-Terrestrial</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1982</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Steven Spielberg directs this heart-warming family
+                                        tale of friendship
+                                        between a boy and his pet alien. Young Elliott (Henry Thomas) has not had a
+                                        happy home life
+                                        since his parents split up. Living with his mother, Mary (Dee Wallace), he is
+                                        constantly
+                                        fighting with his older brother, Michael (Robert MacNaughton), and little
+                                        sister, Gertie (Drew
+                                        Barrymore). When Elliott finds an alien in his backyard one night, he takes the
+                                        creature in,
+                                        christening him 'ET' and aiding him in his efforts to contact his mother ship.
+                                        ET has various
+                                        amazing powers, including the ability to heal and make objects levitate, but his
+                                        growing bond
+                                        with Elliott is threatened by the fact that government officials are already
+                                        trying to track him
+                                        down. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details gremlins">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Gremlins</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1984</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Young Billy Peltzer's (Zach Galligan) everyday
+                                        smalltown life is
+                                        given a lift when his travelling salesman father Rand (Hoyt Axton) buys him the
+                                        ultimate
+                                        Christmas gift in a far-off Chinatown--the mogwai--an adorable little big-eared,
+                                        furry, brown
+                                        and white creature. But the old man who sold the creature gave three rules that
+                                        must always be
+                                        followed when caring for the mogwai: 1) no water 2) no food after midnight 3) no
+                                        bright light.
+                                        When Billy inadvertently violates these first two rules, the small town of
+                                        Kingston Falls is
+                                        turned upside down by a legion of green, nasty gremlins! </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details indiana-jones">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Indiana Jones</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1981</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">It is 1936. Archaeology professor Indiana Jones is
+                                        recruited by the
+                                        US government to find the Lost Ark of the Covenant, which once contained the
+                                        tablets upon which
+                                        the Ten Commandments were written. The Ark, according to legend, has vast power
+                                        that will make
+                                        any side that possesses it invincible and the American government wants to find
+                                        it before The
+                                        Nazis. Indiana goes to Nepal to meet his old girlfriend Marion Ravenwood who has
+                                        the medallion
+                                        that leads to the location of the Ark. Hotly pursued, they travel to Cairo in a
+                                        race to be the
+                                        ones to find the Ark before the Nazis do.
+                                    </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details home-alone">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Home alone</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1988</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">A boy has to fend for himself when he is accidentally
+                                        left behind
+                                        after his
+                                        family jets off to Paris for Christmas. The youngster initially enjoys his
+                                        freedom, but is soon
+                                        forced
+                                        to resort to ingenious booby traps to defend the family home from two dim-witted
+                                        burglars. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details et">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">E.T. the Extra-Terrestrial</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1982</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Steven Spielberg directs this heart-warming family
+                                        tale of friendship
+                                        between a boy and his pet alien. Young Elliott (Henry Thomas) has not had a
+                                        happy home life
+                                        since his parents split up. Living with his mother, Mary (Dee Wallace), he is
+                                        constantly
+                                        fighting with his older brother, Michael (Robert MacNaughton), and little
+                                        sister, Gertie (Drew
+                                        Barrymore). When Elliott finds an alien in his backyard one night, he takes the
+                                        creature in,
+                                        christening him 'ET' and aiding him in his efforts to contact his mother ship.
+                                        ET has various
+                                        amazing powers, including the ability to heal and make objects levitate, but his
+                                        growing bond
+                                        with Elliott is threatened by the fact that government officials are already
+                                        trying to track him
+                                        down. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details gremlins">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Gremlins</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1984</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Young Billy Peltzer's (Zach Galligan) everyday
+                                        smalltown life is
+                                        given a lift when his travelling salesman father Rand (Hoyt Axton) buys him the
+                                        ultimate
+                                        Christmas gift in a far-off Chinatown--the mogwai--an adorable little big-eared,
+                                        furry, brown
+                                        and white creature. But the old man who sold the creature gave three rules that
+                                        must always be
+                                        followed when caring for the mogwai: 1) no water 2) no food after midnight 3) no
+                                        bright light.
+                                        When Billy inadvertently violates these first two rules, the small town of
+                                        Kingston Falls is
+                                        turned upside down by a legion of green, nasty gremlins! </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details indiana-jones">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Indiana Jones</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1981</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">It is 1936. Archaeology professor Indiana Jones is
+                                        recruited by the
+                                        US government to find the Lost Ark of the Covenant, which once contained the
+                                        tablets upon which
+                                        the Ten Commandments were written. The Ark, according to legend, has vast power
+                                        that will make
+                                        any side that possesses it invincible and the American government wants to find
+                                        it before The
+                                        Nazis. Indiana goes to Nepal to meet his old girlfriend Marion Ravenwood who has
+                                        the medallion
+                                        that leads to the location of the Ark. Hotly pursued, they travel to Cairo in a
+                                        race to be the
+                                        ones to find the Ark before the Nazis do.
+                                    </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-films" id="favorites">
+                <h2 class="section-films__title">Favorites</h2>
+                <ul class="section_films__list flex">
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details gremlins">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Gremlins</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1984</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Young Billy Peltzer's (Zach Galligan) everyday
+                                        smalltown life is
+                                        given a lift when his travelling salesman father Rand (Hoyt Axton) buys him the
+                                        ultimate
+                                        Christmas gift in a far-off Chinatown--the mogwai--an adorable little big-eared,
+                                        furry, brown
+                                        and white creature. But the old man who sold the creature gave three rules that
+                                        must always be
+                                        followed when caring for the mogwai: 1) no water 2) no food after midnight 3) no
+                                        bright light.
+                                        When Billy inadvertently violates these first two rules, the small town of
+                                        Kingston Falls is
+                                        turned upside down by a legion of green, nasty gremlins! </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details indiana-jones">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Indiana Jones</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1981</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">It is 1936. Archaeology professor Indiana Jones is
+                                        recruited by the
+                                        US government to find the Lost Ark of the Covenant, which once contained the
+                                        tablets upon which
+                                        the Ten Commandments were written. The Ark, according to legend, has vast power
+                                        that will make
+                                        any side that possesses it invincible and the American government wants to find
+                                        it before The
+                                        Nazis. Indiana goes to Nepal to meet his old girlfriend Marion Ravenwood who has
+                                        the medallion
+                                        that leads to the location of the Ark. Hotly pursued, they travel to Cairo in a
+                                        race to be the
+                                        ones to find the Ark before the Nazis do.
+                                    </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details et">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">E.T. the Extra-Terrestrial</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1982</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Steven Spielberg directs this heart-warming family
+                                        tale of friendship
+                                        between a boy and his pet alien. Young Elliott (Henry Thomas) has not had a
+                                        happy home life
+                                        since his parents split up. Living with his mother, Mary (Dee Wallace), he is
+                                        constantly
+                                        fighting with his older brother, Michael (Robert MacNaughton), and little
+                                        sister, Gertie (Drew
+                                        Barrymore). When Elliott finds an alien in his backyard one night, he takes the
+                                        creature in,
+                                        christening him 'ET' and aiding him in his efforts to contact his mother ship.
+                                        ET has various
+                                        amazing powers, including the ability to heal and make objects levitate, but his
+                                        growing bond
+                                        with Elliott is threatened by the fact that government officials are already
+                                        trying to track him
+                                        down. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details simpson">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">The Simpson</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1989</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">The Simpsons is an American animated sitcom created
+                                        by Matt Groening for the Fox Broadcasting Company. The series is
+                                        a satirical depiction of working-class life, epitomized by the Simpson family,
+                                        which consists of Homer, Marge, Bart, Lisa, and Maggie. The show is set in the
+                                        fictional town of Springfield and parodies American culture and society,
+                                        television, and the human condition. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details gremlins">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Gremlins</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1984</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Young Billy Peltzer's (Zach Galligan) everyday
+                                        smalltown life is
+                                        given a lift when his travelling salesman father Rand (Hoyt Axton) buys him the
+                                        ultimate
+                                        Christmas gift in a far-off Chinatown--the mogwai--an adorable little big-eared,
+                                        furry, brown
+                                        and white creature. But the old man who sold the creature gave three rules that
+                                        must always be
+                                        followed when caring for the mogwai: 1) no water 2) no food after midnight 3) no
+                                        bright light.
+                                        When Billy inadvertently violates these first two rules, the small town of
+                                        Kingston Falls is
+                                        turned upside down by a legion of green, nasty gremlins! </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details home-alone">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">Home alone</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1988</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">A boy has to fend for himself when he is accidentally
+                                        left behind
+                                        after his
+                                        family jets off to Paris for Christmas. The youngster initially enjoys his
+                                        freedom, but is soon
+                                        forced
+                                        to resort to ingenious booby traps to defend the family home from two dim-witted
+                                        burglars. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="section-film__item">
+                        <a class="section-film__link">
+                            <div class="section-film__details et">
+                                <div class="film-info">
+                                    <h1 class="film-info__title">E.T. the Extra-Terrestrial</h1>
+                                    <div class="flex-vertical-center">
+                                        <i class="film-info__icon icon-play2"></i>
+                                        <span class="film-info__year">1982</span>
+                                        <span class="film-info__origin">EEUU</span>
+                                    </div>
+                                    <p class="film-info__synopsis">Steven Spielberg directs this heart-warming family
+                                        tale of friendship
+                                        between a boy and his pet alien. Young Elliott (Henry Thomas) has not had a
+                                        happy home life
+                                        since his parents split up. Living with his mother, Mary (Dee Wallace), he is
+                                        constantly
+                                        fighting with his older brother, Michael (Robert MacNaughton), and little
+                                        sister, Gertie (Drew
+                                        Barrymore). When Elliott finds an alien in his backyard one night, he takes the
+                                        creature in,
+                                        christening him 'ET' and aiding him in his efforts to contact his mother ship.
+                                        ET has various
+                                        amazing powers, including the ability to heal and make objects levitate, but his
+                                        growing bond
+                                        with Elliott is threatened by the fact that government officials are already
+                                        trying to track him
+                                        down. </p>
+                                    <ul class="film__score thumbnail-score flex">
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-full"></i></li>
+                                        <li class="hero__score-item"><i class="icon-star-half"></i></li>
+                                    </ul>
+                                    <a class="more-information" href="#">More information</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+            <div class="footer__container">
+                <aside class="footer__information">
+                    <ul class="footer__links">
+                        <li class="footer__linkItem">
+                            <a class="footer__link" href="#">About us</a>
+                        </li>
+                        <li class="footer__linkItem">
+                            <a class="footer__link" href="#">Jobs</a>
+                        </li>
+                        <li class="footer__linkItem">
+                            <a class="footer__link" href="#">Help</a>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="footer__map">
+                    <ul class="footer__links">
+                        <li class="footer__linkItem">
+                            <a class="footer__link" href="#">Series</a>
+                        </li>
+                        <li class="footer__linkItem">
+                            <a class="footer__link" href="#">Films</a>
+                        </li>
+                        <li class="footer__linkItem">
+                            <a class="footer__link" href="#">News</a>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="footer__legal">
+                    <ul class="footer__links">
+                        <li class="footer__linkItem">
+                            <a class="footer__link" href="#">Term of Use</a>
+                        </li>
+                        <li class="footer__linkItem">
+                            <a class="footer__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="footer__social">
+                        <ul class="footer__links">
+                            <li class="footer__linkItem">
+                                <a class="footer__link" href="#"><i class="searchForm_icon icon-github"></i></a>
+                            </li>
+                            <li class="footer__linkItem">
+                                <a class="footer__link" href="#"><i class="searchForm_icon icon-twitter"></i></a>
+                            </li>
+                            <li class="footer__linkItem">
+                                <a class="footer__link" href="#"><i class="searchForm_icon icon-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </aside>
+                <p class="footer__copyright">Copyright ©2019. Dejavu All rights reserved.</p>
+        
+            </div>
+    </footer>
 </body>
 
 </html>
