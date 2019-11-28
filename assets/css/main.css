@@ -3,7 +3,8 @@
 @import "../icomoon.css";
 @import "./flex.css";
 
-
+/*common*/
+@import "./footer.css";
 
 /* ---------------------------PAGE LOGIN */
 
