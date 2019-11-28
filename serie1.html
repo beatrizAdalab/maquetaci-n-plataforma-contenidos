@@ -16,23 +16,43 @@
     <header class="header">
         <nav class="headerNav flex-vertical-center">
             <div class="headerNav__primary flex-vertical-center">
-                <button class="btn button__menu"><i class="searchForm_icon icon-menu"></i></button>
-                <a class="headerNav__linkLogo" href="#">
-                    <img class="header__logo" src="./assets/img/logo.png" alt="logo DejaVú">
-                </a>
-                <ul class="headerNav__list flex">
-                    <li class="headerNav__item"><a class="headerNav__link" href="#novedades">News</a></li>
-                    <li class="headerNav__item"><a class="headerNav__link" href="#series">Series</a></li>
-                    <li class="headerNav__item"><a class="headerNav__link" href="#films">Films</a></li>
-                    <li class="headerNav__item"><a class="headerNav__link" href="#favorites">Favorites</a></li>
-                </ul>
+                    <label for="menu-toggle">
+                       <div class="btn button__menu"><i class="searchForm_icon icon-menu"></i></div>
+                    </label>
+                   
+                    <a class="headerNav__linkLogo" href="#">
+                        <img class="header__logo" src="./assets/img/logo.png" alt="logo DejaVú">
+                    </a>
+                    <div class="headerNav__menu-toggle">
+                            <input type="checkbox" id="menu-toggle"/>
+                            <ul class="headerNav__list flex" id="menu">
+                                    <li class="headerNav__item-search flex-center">
+                                            <div class="headerNav__search">
+                                                <form class="formSearch-s flex-vertical-center" autocomplete="off">
+                                                    <label for="search" class="hidden-sr">search</label>
+                                                    <input class="formSearch__control" name="search" type="text" id="search" placeholder="Search...">
+                                                    <button class="btn formSearch__button--submit" name="btn-search" type="submit">
+                                                        <i class="searchForm_icon icon-search"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </li>
+                                <li class="headerNav__item"><a class="headerNav__link" href="#novedades">News</a></li>
+                                <li class="headerNav__item"><a class="headerNav__link" href="#series">Series</a></li>
+                                <li class="headerNav__item"><a class="headerNav__link" href="#films">Films</a></li>
+                                <li class="headerNav__item"><a class="headerNav__link" href="#favorites">Favorites</a></li>
+                            </ul>
+                    </div>
             </div>
+            
             <div class="headerNav__secondary flex-vertical-center">
                 <div class="headerNav__search">
                     <form class="formSearch flex-vertical-center" autocomplete="off">
-                        <input class="formSearch__control" type="text" id="Search" placeholder="Search...">
-                        <button class="btn formSearch__button--submit" type="submit">
-                            <i class="searchForm_icon icon-search"></i></button>
+                        <label for="search" class="hidden-sr">search</label>
+                        <input class="formSearch__control" name="search" type="text" id="search" placeholder="Search...">
+                        <button class="btn formSearch__button--submit" name="btn-search" type="submit">
+                            <i class="searchForm_icon icon-search"></i>
+                        </button>
                     </form>
                 </div>
                 <button class="btn button__closed"><i class="searchForm_icon icon-cross"></i></button>
