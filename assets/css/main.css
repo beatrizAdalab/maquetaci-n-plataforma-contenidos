@@ -2,11 +2,10 @@
 @import "./variables.css";
 @import "../icomoon.css";
 @import "./flex.css";
-
 /*common*/
+
 @import "./footer.css";
 @import "./nav.css";
-
 /* ---------------------------PAGE LOGIN */
 
 .headerLogin {
@@ -97,5 +96,103 @@
         height: calc(100vh - 100px);
         align-items: center;
         justify-content: center;
+    }
+}
+
+/* HEADER------------------------------------ */
+
+.hero__image {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+.hero__video {
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__details {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 450px;
+    margin: auto;
+}
+
+.hero__title {
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    max-width: 388px;
+}
+
+.hero__description {
+    font-size: .8rem;
+    color: var(--color-grey-light);
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+
+.film__score {
+    color: var(--color-primary);
+    padding: 10px;
+    margin: 1rem 0;
+    border: 1px solid var(--color-primary-opacity);
+    justify-content: center;
+}
+
+.hero__score-item {
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero__container {
+        position: relative;
+        width: 100%;
+    }
+    .hero__content-detail {
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        left: 25%;
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0) 100%);
+    }
+    .hero__details {
+        max-width: 300px;
+        margin: 0;
+        padding: 0;
+        padding-top: 5rem;
+        padding-left: 3rem;
+    }
+    .hero__title {
+        text-align: left;
+    }
+    .hero__description {
+        text-align: left;
+    }
+    @media only screen and (min-width: 1024px) {
+        .hero__image, .hero__video {
+            margin-top: 0;
+        }
+        .hero__title {
+            font-size: 3rem;
+        }
+        .hero__details {
+            padding-left: 5rem;
+            max-width: 400px;
+        }
+        .hero__description {
+            font-size: 1rem;
+        }
     }
 }
