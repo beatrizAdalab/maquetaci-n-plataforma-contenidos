@@ -1,0 +1,99 @@
+@import "./normalize.css";
+@import "./variables.css";
+@import "../icomoon.css";
+@import "./flex.css";
+
+
+
+/* ---------------------------PAGE LOGIN */
+
+.headerLogin {
+    height: 60px;
+    align-items: center;
+}
+
+.headerLogin__link {
+    height: 35px;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.header__logo {
+    height: 100%;
+}
+
+.login {
+    height: calc(100vh - 60px);
+    padding: 0 20px;
+    color: var(--color-grey-light);
+}
+
+.login__container {
+    padding: 2.5rem 0;
+    max-width: 350px;
+    margin: auto;
+}
+
+.formLogin__control {
+    background: var(--color-grey);
+    display: block;
+    width: 100%;
+    padding-left: 1.5rem;
+    line-height: 2.5;
+    color: white;
+    border-radius: .25rem;
+    border: 0;
+    margin-bottom: 2rem;
+    border: 1px solid var(--color-grey);
+}
+
+.formLogin__control:focus {
+    outline: none !important;
+    border: 1px solid var(--color-primary-opacity);
+}
+
+.formLogin__label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.formLogin__button--submit {
+    background: var(--color-primary);
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.formLogin__button--submit:hover {
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+.form-login__linkHelp {
+    font-size: 0.9rem;
+}
+
+.form-login__linkHelp:hover {
+    color: var(--color-white);
+}
+
+@media only screen and (min-width: 500px) {
+    .bodylogin {
+        background-image: radial-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/films.jpg);
+    }
+    .headerLogin {
+        height: 100px;
+    }
+    .headerLogin__link {
+        height: 50px;
+    }
+    .login__container {
+        padding: 5rem 2.5rem;
+        max-width: 430px;
+        background-color: RGBA(0, 0, 0, 0.8);
+    }
+    .login {
+        height: calc(100vh - 100px);
+        align-items: center;
+        justify-content: center;
+    }
+}
