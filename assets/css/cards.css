@@ -66,9 +66,16 @@
     cursor: pointer;
 }
 
+.section-film__end {
+    width: 240px;
+    height: 145px;
+    color: var(--color-primary);
+    background: var(--color-grey);
+}
+
 .section-film__details:hover {
     margin-right: 5px;
-    height: 420px;
+    height: 100%;
     width: calc(100vw - 40px);
 }
 
@@ -82,7 +89,7 @@
 
 .section-film__details:hover .film-info {
     opacity: 1;
-    height: 420px;
+    height: 100%;
     overflow: hidden;
 }
 
