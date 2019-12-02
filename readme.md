@@ -1,4 +1,4 @@
-#DejaVú
+# DejaVú
 
 Creation of a web platform for digital content.
 
@@ -13,14 +13,19 @@ The page should be displayed in the current versions of the main browsers.
 
 The page must also have good accessibility and be responsive:
 
+![page login](/assets/img/readme-img/movil-home.png)
+
+
 A login page has been created
 
-![page login] (/assets/img/readme-img/login.png)
+![page login](/assets/img/readme-img/login.png)
 
 a home page with four categories (news, series, flims and favorites)
 
-![page home] (/assets/img/readme-img/home-ipad2.png)
+![page home](/assets/img/readme-img/home-ipad2.png)
+
+![page home](/assets/img/readme-img/home-ipad.png)
 
 and a master page for each of the series:
 
-![page series] (/assets/img/readme-img/laptop.png)
+![page series](/assets/img/readme-img/laptop.png)
