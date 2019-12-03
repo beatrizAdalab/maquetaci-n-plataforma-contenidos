@@ -52,8 +52,6 @@
 
 .section_films__list, .section-characters__list {
     width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
 }
 
 .section-film__details {
@@ -167,8 +165,6 @@
     .film-info__synopsis {
         display: block;
         height: 80px;
-        overflow-y: scroll;
-        overflow-x: hidden;
         white-space: wrap;
         text-overflow: ellipsis;
     }
