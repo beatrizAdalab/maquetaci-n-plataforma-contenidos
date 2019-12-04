@@ -1,6 +1,6 @@
 /*scroll bar styles for thumbnails------------------------------*/
 .film-info__synopsis{
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     scrollbar-color: var(--color-primary) var(--color-grey-light); /*  Scroll Firefox */
 }
@@ -26,14 +26,14 @@
 
 .film-info__synopsis::-webkit-scrollbar-track:hover {
     background: var(--color-grey-light);
-  }
+}
 
 
 
 /*scroll bar styles for list------------------------------*/
 
 .section_films__list, .section-characters__list {
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
 }
 
